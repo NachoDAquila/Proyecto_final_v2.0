@@ -1,0 +1,16 @@
+.h2Formato {
+    background-color: aqua;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.h2FormatoOscuro {
+    @extend .h2Formato;
+    background-color: rgb(30, 190, 190);
+}
+
+@mixin formas($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+

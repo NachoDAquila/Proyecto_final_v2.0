@@ -1,0 +1,109 @@
+.h2Formato, .h2FormatoOscuro {
+  background-color: aqua;
+  font-size: 30px;
+  padding: 10px; }
+
+.h2FormatoOscuro {
+  background-color: #1ebebe; }
+
+/*Mapa*/
+.fondo-clave {
+  background-color: white; }
+
+.fondo-clave {
+  background-color: grey; }
+
+.fondo-clave {
+  background-color: yellow; }
+
+.fondo-clave {
+  background-color: pink; }
+
+.fondo-clave {
+  background-color: red; }
+
+.fondo-clave {
+  background-color: green; }
+
+.fondo-clave {
+  background-color: blue; }
+
+.fondo-clave {
+  background-color: violet; }
+
+.fondo-clave {
+  background-color: black; }
+
+/*Estilos del index*/
+nav.gradienteLineal {
+  background-image: linear-gradient(to bottom right, #ebe39d 30%, #dabb78 70%); }
+
+nav div div ul li:hover {
+  background-color: #ecca7f;
+  border: double black; }
+
+section.fondoGrisDos {
+  background-image: linear-gradient(to top left, #f5f1f1 50%, #d8bfbf 95%); }
+
+section h1.animacionTitulos {
+  animation-name: titulos;
+  animation-iteration-count: 1;
+  animation-duration: 2.5s;
+  animation-delay: 0.1s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67); }
+
+section h1 h2.animacionTitulos {
+  animation-name: titulos;
+  animation-iteration-count: 1;
+  animation-duration: 2.5s;
+  animation-delay: 0.1s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67); }
+
+section p {
+  text-align: justify;
+  /*.justificado {
+            text-align: map-get($estilo, justificado);
+        }*/ }
+  section p.paddingDiez {
+    padding: 10px; }
+
+section.fondoGris {
+  background-image: linear-gradient(to bottom right, #f5f1f1 50%, #d8bfbf 95%); }
+
+section.seccionTutorial h2.slide-top {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.44, 0.69, 0.49, 0.95) both;
+  animation: slide-top 0.5s cubic-bezier(0.44, 0.69, 0.49, 0.95) both;
+  animation-delay: 0.3s;
+  animation-duration: 3s; }
+
+.cajaEstandar {
+  width: 600px;
+  height: 100px;
+  background-color: #b3afaf; }
+
+/*Keyframes*/
+@keyframes titulos {
+  from {
+    opacity: 0.1; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px); }
+  50% {
+    font-size: 40px; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px); }
+  50% {
+    font-size: 40px; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }

@@ -1,0 +1,28 @@
+/*Mapa*/
+
+$bgcolor: (
+            blanco: white,
+            gris: grey,
+            amarillo: yellow,
+            rosa: pink,
+            rojo: red,
+            verde: green,
+            azul: blue,
+            violeta: violet,
+            negro: black
+);
+
+$estilo: (
+    color: rgb(41, 40, 40),
+    tamañoFuente: 30px,
+    centro: center,
+    justificado: justify,
+    derecha: right
+);
+
+@each $clave, $valor in $bgcolor {
+    .fondo-#{clave} {
+        background-color: $valor;
+    }
+}
+
