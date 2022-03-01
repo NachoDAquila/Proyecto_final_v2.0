@@ -22,7 +22,7 @@
 <body>
 
     <!--Barra de Navegacion-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light gradienteLineal">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light gradienteLineal shadow p-3 mb-4 bg-white rounded">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="brown"
@@ -75,21 +75,33 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../img/Korg Kronos.jpg" class="d-block w-100" alt="...">
+                    <img srcset="../img/KorgKronosChica.png 480w,
+                                ../img/KorgKronos.jpg 800w"
+                    sizes="(max-width: 600px) 480px,
+                    800px"
+                    src="../img/KorgKronos.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-white bg-dark">Korg Kronos</h5>
                         <p class="text-white bg-dark text-center">El teclado insignia de Korg</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/Yamaha Motif.jpg" class="d-block w-100" alt="...">
+                    <img srcset="../img/YamahaMotifChica.png 480w,
+                                ../img/YamahaMotif.jpg 800w"
+                    sizes="(max-width: 600px) 480px,
+                    800px"
+                    src="../img/YamahaMotif.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-white bg-dark">Yamaha Motif</h5>
                         <p class="text-white bg-dark text-center">La renovada opción de Yamaha</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/Wave grande.jpg" class="d-block w-100" alt="...">
+                    <img srcset="../img/WavegrandeChica.png 480w,
+                                ../img/Wavegrande.jpg 800w"
+                    sizes="(max-width: 600px) 480px,
+                    800px"
+                    src="../img/Wavegrande.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-white bg-dark">Nord Wave</h5>
                         <p class="text-white bg-dark text-center">El todoterreno de Nord</p>
@@ -120,19 +132,19 @@
                     <a href="#" class="btn btn-primary">Comprá Ahora</a>
                 </div>
             </div>
-            <div class="card col-3 p-1 m-1" style="width: 18rem;">
-                <img src="../img/Yamaha Reface.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Yamaha Reface</h5>
-                    <p class="card-text">Sonidos vintage para tu música</p>
-                    <a href="#" class="btn btn-primary">Comprá Ahora</a>
-                </div>
-            </div>
             <div class="card col-3 p-2 m-1" style="width: 18rem;">
                 <img src="../img/Nord Lead.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nord Lead</h5>
                     <p class="card-text">Lo último del gigante sueco</p>
+                    <a href="#" class="btn btn-primary">Comprá Ahora</a>
+                </div>
+            </div>
+            <div class="card col-3 p-1 m-1" style="width: 18rem;">
+                <img src="../img/Yamaha Reface.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Yamaha Reface</h5>
+                    <p class="card-text">Sonidos vintage para tu música</p>
                     <a href="#" class="btn btn-primary">Comprá Ahora</a>
                 </div>
             </div>
@@ -145,11 +157,11 @@
 
     <!--Footer Derechos y Redes-->
     <footer>
-        <div class="container-fluid bg-light text-center p-3">
-            <span class="small">&copy; Todos los derechos reservados</span>
+        <div class="container-fluid bg-secondary bg-opacity-25 text-dark text-center p-3">
             <span><a href="https://wwww.facebook.com/" target="_blank">Facebook</a></span>
             <span><a href="https://wwww.instagram.com/" target="_blank">Instagram</a></span>
             <span><a href="https://wwww.web.whatsappo.com/" target="_blank">Whatsapp</a></span>
+            <div class="small">&copy; Todos los derechos reservados</div>
         </div>
     </footer>
 

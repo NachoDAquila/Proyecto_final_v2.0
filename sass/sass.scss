@@ -19,7 +19,6 @@ nav {
                 li {
                     &:hover {
                     background-color: rgb(236, 202, 127);
-                    border: double black;
                     }
                 }
             }
@@ -59,7 +58,7 @@ section {
             text-align: map-get($estilo, justificado);
         }*/
         &.paddingDiez {
-            padding: 10px
+            padding: 10px;
         }
 
     }
@@ -85,6 +84,31 @@ section {
 .cajaEstandar {
     @include formas(600px, 100px);
     background-color: rgb(179, 175, 175);
+}
+
+.imagenFondo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-image: url(../img/guitars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.45;
+    }
+}
+
+.aparecer {
+    position: relative;
 }
 
 /*Keyframes*/

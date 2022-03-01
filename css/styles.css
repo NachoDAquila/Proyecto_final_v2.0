@@ -39,8 +39,7 @@ nav.gradienteLineal {
   background-image: linear-gradient(to bottom right, #ebe39d 30%, #dabb78 70%); }
 
 nav div div ul li:hover {
-  background-color: #ecca7f;
-  border: double black; }
+  background-color: #ecca7f; }
 
 section.fondoGrisDos {
   background-image: linear-gradient(to top left, #f5f1f1 50%, #d8bfbf 95%); }
@@ -80,6 +79,27 @@ section.seccionTutorial h2.slide-top {
   width: 600px;
   height: 100px;
   background-color: #b3afaf; }
+
+.imagenFondo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%; }
+  .imagenFondo::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-image: url(../img/guitars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.45; }
+
+.aparecer {
+  position: relative; }
 
 /*Keyframes*/
 @keyframes titulos {
